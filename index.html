@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>10-Day HTML/CSS Challenge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">HTML/CSS Challenge</div>
+    <div class="controls">
+      <div class="custom-select">
+        <select id="day-select" aria-label="Перейти к дню"></select>
+      </div>
+      <button class="theme-toggle" id="theme-toggle" title="Переключить тему">🌓</button>
+    </div>
+    <div class="progress-container"><div class="progress-bar" id="progress-bar"></div></div>
+  </header>
+  <main>
+    <div class="challenges-grid" id="grid"></div>
+    <div class="detail" id="detail">
+      <h2 id="detail-title"></h2>
+      <p id="detail-desc"></p>
+      <div><a href="#" id="detail-link" class="link" target="_blank">Ресурсы и примеры</a></div>
+      <div class="nav-buttons">
+        <button class="btn" id="prev-btn">← Назад</button>
+        <button class="btn" id="complete-btn">Сделано</button>
+        <button class="btn" id="next-btn">Далее →</button>
+      </div>
+      <button class="btn" id="back-btn">К списку</button>
+    </div>
+  </main>
+  <div class="overlay" id="onboard">
+    <div class="overlay-content">
+      <h2>Добро пожаловать!</h2>
+      <p>Кликните карточку, чтобы открыть задание.<br>← → — переход между днями;<br>Пробел — отметить выполненным;<br>Esc — назад.</p>
+      <button class="btn" id="onboarding-close">Понял!</button>
+    </div>
+  </div>
+  <div class="toast" id="toast">Задание отмечено</div>
+  <script src="main.js">
+   
+  </script>
+</body>
+</html>
